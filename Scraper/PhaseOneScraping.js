@@ -2,29 +2,28 @@ var fs = require('fs');
 var request = require('request');
 var cheerio = require('cheerio');
 
-url = 'http://www.imdb.com/title/tt1229340/';
+url = '';
 
 request(url, function(error, response, html){
     if(!error){
         var $ = cheerio.load(html);
 
-        var title, release, rating;
-        var json = { title : "", release : "", rating : ""};
+        var x, y, z;
+        var json = { x : "", y : "", z : ""};
 
+        //using jquery syntax
         $('.header').filter(function(){
             var data = $(this);
-            title = data.children().first().text();            
-            release = data.children().last().children().text();
+            //do stuff with the data
 
-            json.title = title;
-            json.release = release;
+            json.x = 'stuff here'
         })
 
-        $('.star-box-giga-star').filter(function(){
+        $('body').filter(function(){
             var data = $(this);
-            rating = data.text();
+            //do more stuff with the data
 
-            json.rating = rating;
+            json.y = 'more stuff';
         })
     }
 
@@ -36,10 +35,7 @@ request(url, function(error, response, html){
 
     fs.writeFile('output.json', JSON.stringify(json, null, 4), function(err){
 
-        console.log('File successfully written! - Check your project directory for the output.json file');
+        console.log('File successfully written! - Check the directory for the output.json file');
 
     })
 });
-
-// Finally, we'll just send out a message to the browser reminding you that this app does not have a UI.
-
