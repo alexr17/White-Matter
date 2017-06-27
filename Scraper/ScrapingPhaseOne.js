@@ -33,6 +33,9 @@ function directory (file_path) {
                 rawData[ii] = parse(rawData[ii])
                 //console.log(rawData[ii])
             }
+            fileNames = fileNames.map(function(e){
+                return e.replace('.prb','')
+            })
             write(fileNames, 'File_Names.txt')
         })
     })
@@ -51,9 +54,7 @@ function parse (data) { //parse the data
 }
 
 function write (array, file) {
-    for (obj of array) {
-        fs.writeFileSync(file, obj, 'utf8')
-    }
+    fs.writeFileSync(file, array, 'utf8')
 }
 
 directory(file_path)
