@@ -1,9 +1,4 @@
-channel_groups = {
-    # Shank index.
-    0:
-        {
-            # List of channels to keep for spike detection.
-            'channels': list(range(32)),
+channel_groups = {0: {'channels': list(range(32)),
 
             # Adjacency graph. Dead channels will be automatically discarded
             # by considering the corresponding subgraph.
