@@ -1,93 +1,88 @@
 var fs = require('fs')
-var plotly = require('plotly')('anicolas', 'WmmMkswSq6Wwlh5FpRIc');
+var plotly = require('plotly')('WhiteMatter', 'hBY86ojuUrl5lGJWmETq');
 
 
 var file_path = '/Users/Alex/Desktop/WhiteMatterSummer2017/Scraper/'
 
-//read the file
-if (process.argv.length <= 2) {
-  console.log("Usage: " + __filename + file_path);
-  process.exit(-1);
-}
-var path = process.argv[2];
-
-var names = fs.readFileSync(file_path + path, 'utf8').split(',\n')
+var names = fs.readFileSync(file_path + 'File_Names.txt', 'utf8').split(',')
 //console.log(data)
-
 //for buttons:
-
-
+var xVals = fs.readFileSync(file_path + 'X_Values.txt', 'utf8').split('\n')
+var yVals = fs.readFileSync(file_path + 'Y_Values.txt', 'utf8').split('\n')
 
 var bools = new Array(names.length).fill(false)
+
+
 var list = []
+var data = []
 for (var ii = 0; ii < names.length; ii++) {
-  list.push({
-    args: ['visible', replace(bools,ii)],
-    label: names[ii],
-    method: 'restyle'
+  data.push({
+    x: xVals[ii].split(',').map(Number),
+    y: yVals[ii].split(',').map(Number),
+    mode: 'markers',
+    size: 15, // in microns
+    type: 'scatter',
+    name: names[ii],
+    visible: false,
+    color: 'red'
   })
+  list.push({
+    args: ['visible',bools.slice()],
+    label: names[ii],
+    method: 'restyle',
+  })
+  //console.log(data[ii].x)
 }
+
+for (var ii = 0; ii < list.length; ii++) {
+  //console.log(list[ii].args)
+  list[ii].args[1][ii] = true
+  //console.log(bools)
+}
+//console.log(list[1000].args[1])
 //console.log(list)
 
-trace1 = {
-  x: [4,3,2,1], 
-  y: [8,7,6,5], 
-  line: {color: 'rgba(31,119,180,1)'}, 
-  type: 'scatter',
-};
-trace2 = {
-  x: [4,3,2,1], 
-  y: [5,6,7,8], 
-  line: {color: 'rgba(255,127,14,1)'}, 
-  type: 'scatter', 
-  visible: false,
-};
-
-data = [trace1, trace2];
 layout = {
-  margin: {
-    r: 10, 
-    t: 25, 
-    b: 40, 
-    l: 60
-  }, 
-  title: 'Probe Electrode Locations',
+  title: 'Neuronexus Probe Electrodes Maps',
   updatemenus: [
     {
-      y: 0.7, 
       buttons: list
     }
   ],
   yanchor: 'top',
   xaxis: {
-    autorange: true,
-    showgrid: false,
-    zeroline: true,
-    showline: true,
+    
+    title: "Microns",
+    showgrid: true,
     autotick: true,
     linecolor: '#d3d3d3',
     mirror: "ticks",
-    showticklabels: false
+    autorange: true
+
   },
   yaxis: {
-    autorange: true,
+    
+    title: "Microns",
     showgrid: false,
-    zeroline: true,
-    showline: true,
     autotick: true,
     linecolor: '#d3d3d3',
     mirror: "ticks",
-    showticklabels: false
+    autorange: true
+
+  },
+
+  margin: {
+    l: 50,
+    r: 50,
+    b: 100,
+    t: 100,
+    pad: 4
   }
 };
 
+
 plotly.plot(data, {layout: layout, fileopt: "overwrite"}, function(err, msg) {
-  console.log(msg);
+  console.log(msg)
+  console.log(err);
 });
 
-function replace(array, index) {
-  var array2 = array
-  array2[index] = true
-  console.log(array2)
-  return array2
-}
