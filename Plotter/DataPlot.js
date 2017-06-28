@@ -11,15 +11,19 @@ if (process.argv.length <= 2) {
 }
 var path = process.argv[2];
 
-var data = fs.readFileSync(file_path + path, 'utf8')
+var names = fs.readFileSync(file_path + path, 'utf8').split(',\n')
 //console.log(data)
 
-var names = data.split(',')
+//for buttons:
+
+
+
+var bools = new Array(names.length).fill(false)
 var list = []
-for (name of names) {
+for (var ii = 0; ii < names.length; ii++) {
   list.push({
-    args: ['visible'],
-    label: name,
+    args: ['visible', replace(bools,ii)],
+    label: names[ii],
     method: 'restyle'
   })
 }
@@ -29,13 +33,14 @@ trace1 = {
   x: [4,3,2,1], 
   y: [8,7,6,5], 
   line: {color: 'rgba(31,119,180,1)'}, 
-  type: 'scatter',  
+  type: 'scatter',
 };
 trace2 = {
-  x: [1,2,3,4], 
+  x: [4,3,2,1], 
   y: [5,6,7,8], 
   line: {color: 'rgba(255,127,14,1)'}, 
   type: 'scatter', 
+  visible: false,
 };
 
 data = [trace1, trace2];
@@ -46,13 +51,14 @@ layout = {
     b: 40, 
     l: 60
   }, 
-  title: 'Probe Electrode Locations', 
+  title: 'Probe Electrode Locations',
   updatemenus: [
     {
       y: 0.7, 
       buttons: list
     }
-  ], 
+  ],
+  yanchor: 'top',
   xaxis: {
     autorange: true,
     showgrid: false,
@@ -78,3 +84,10 @@ layout = {
 plotly.plot(data, {layout: layout, fileopt: "overwrite"}, function(err, msg) {
   console.log(msg);
 });
+
+function replace(array, index) {
+  var array2 = array
+  array2[index] = true
+  console.log(array2)
+  return array2
+}
