@@ -1,0 +1,326 @@
+{
+  "name": "64D",
+  "length": 64,
+  "probeGeometry": [
+    {
+      "electrodeNum": 1,
+      "x": 0,
+      "y": 1025
+    },
+    {
+      "electrodeNum": 2,
+      "x": 0,
+      "y": 925
+    },
+    {
+      "electrodeNum": 3,
+      "x": 0,
+      "y": 825
+    },
+    {
+      "electrodeNum": 4,
+      "x": 0,
+      "y": 725
+    },
+    {
+      "electrodeNum": 5,
+      "x": 0,
+      "y": 625
+    },
+    {
+      "electrodeNum": 6,
+      "x": 0,
+      "y": 525
+    },
+    {
+      "electrodeNum": 7,
+      "x": 0,
+      "y": 425
+    },
+    {
+      "electrodeNum": 8,
+      "x": 0,
+      "y": 325
+    },
+    {
+      "electrodeNum": 9,
+      "x": 0,
+      "y": 225
+    },
+    {
+      "electrodeNum": 10,
+      "x": 0,
+      "y": 125
+    },
+    {
+      "electrodeNum": 11,
+      "x": 0,
+      "y": 25
+    },
+    {
+      "electrodeNum": 12,
+      "x": -8,
+      "y": 50
+    },
+    {
+      "electrodeNum": 13,
+      "x": -10,
+      "y": 100
+    },
+    {
+      "electrodeNum": 14,
+      "x": -10,
+      "y": 150
+    },
+    {
+      "electrodeNum": 15,
+      "x": -10,
+      "y": 200
+    },
+    {
+      "electrodeNum": 16,
+      "x": -10,
+      "y": 250
+    },
+    {
+      "electrodeNum": 17,
+      "x": -10,
+      "y": 1050
+    },
+    {
+      "electrodeNum": 18,
+      "x": -10,
+      "y": 1000
+    },
+    {
+      "electrodeNum": 19,
+      "x": -10,
+      "y": 950
+    },
+    {
+      "electrodeNum": 20,
+      "x": -10,
+      "y": 900
+    },
+    {
+      "electrodeNum": 21,
+      "x": -10,
+      "y": 850
+    },
+    {
+      "electrodeNum": 22,
+      "x": -10,
+      "y": 800
+    },
+    {
+      "electrodeNum": 23,
+      "x": -10,
+      "y": 750
+    },
+    {
+      "electrodeNum": 24,
+      "x": -10,
+      "y": 700
+    },
+    {
+      "electrodeNum": 25,
+      "x": -10,
+      "y": 650
+    },
+    {
+      "electrodeNum": 26,
+      "x": -10,
+      "y": 300
+    },
+    {
+      "electrodeNum": 27,
+      "x": -10,
+      "y": 350
+    },
+    {
+      "electrodeNum": 28,
+      "x": -10,
+      "y": 400
+    },
+    {
+      "electrodeNum": 29,
+      "x": -10,
+      "y": 450
+    },
+    {
+      "electrodeNum": 30,
+      "x": -10,
+      "y": 500
+    },
+    {
+      "electrodeNum": 31,
+      "x": -10,
+      "y": 550
+    },
+    {
+      "electrodeNum": 32,
+      "x": -10,
+      "y": 600
+    },
+    {
+      "electrodeNum": 33,
+      "x": 10,
+      "y": 650
+    },
+    {
+      "electrodeNum": 34,
+      "x": 10,
+      "y": 600
+    },
+    {
+      "electrodeNum": 35,
+      "x": 10,
+      "y": 550
+    },
+    {
+      "electrodeNum": 36,
+      "x": 10,
+      "y": 500
+    },
+    {
+      "electrodeNum": 37,
+      "x": 10,
+      "y": 450
+    },
+    {
+      "electrodeNum": 38,
+      "x": 10,
+      "y": 400
+    },
+    {
+      "electrodeNum": 39,
+      "x": 10,
+      "y": 350
+    },
+    {
+      "electrodeNum": 40,
+      "x": 10,
+      "y": 700
+    },
+    {
+      "electrodeNum": 41,
+      "x": 10,
+      "y": 750
+    },
+    {
+      "electrodeNum": 42,
+      "x": 10,
+      "y": 800
+    },
+    {
+      "electrodeNum": 43,
+      "x": 10,
+      "y": 850
+    },
+    {
+      "electrodeNum": 44,
+      "x": 10,
+      "y": 900
+    },
+    {
+      "electrodeNum": 45,
+      "x": 10,
+      "y": 950
+    },
+    {
+      "electrodeNum": 46,
+      "x": 10,
+      "y": 1000
+    },
+    {
+      "electrodeNum": 47,
+      "x": 10,
+      "y": 1050
+    },
+    {
+      "electrodeNum": 48,
+      "x": 10,
+      "y": 300
+    },
+    {
+      "electrodeNum": 49,
+      "x": 10,
+      "y": 250
+    },
+    {
+      "electrodeNum": 50,
+      "x": 10,
+      "y": 200
+    },
+    {
+      "electrodeNum": 51,
+      "x": 10,
+      "y": 150
+    },
+    {
+      "electrodeNum": 52,
+      "x": 10,
+      "y": 100
+    },
+    {
+      "electrodeNum": 53,
+      "x": 8,
+      "y": 50
+    },
+    {
+      "electrodeNum": 54,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "electrodeNum": 55,
+      "x": 0,
+      "y": 75
+    },
+    {
+      "electrodeNum": 56,
+      "x": 0,
+      "y": 175
+    },
+    {
+      "electrodeNum": 57,
+      "x": 0,
+      "y": 275
+    },
+    {
+      "electrodeNum": 58,
+      "x": 0,
+      "y": 375
+    },
+    {
+      "electrodeNum": 59,
+      "x": 0,
+      "y": 475
+    },
+    {
+      "electrodeNum": 60,
+      "x": 0,
+      "y": 575
+    },
+    {
+      "electrodeNum": 61,
+      "x": 0,
+      "y": 675
+    },
+    {
+      "electrodeNum": 62,
+      "x": 0,
+      "y": 775
+    },
+    {
+      "electrodeNum": 63,
+      "x": 0,
+      "y": 875
+    },
+    {
+      "electrodeNum": 64,
+      "x": 0,
+      "y": 975
+    }
+  ]
+}

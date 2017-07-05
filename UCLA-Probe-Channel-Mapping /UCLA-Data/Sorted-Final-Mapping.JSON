@@ -1,0 +1,390 @@
+{
+  "name": "64D",
+  "length": 64,
+  "probeGeometry": [
+    {
+      "electrodeNum": 54,
+      "x": 0,
+      "y": 0,
+      "adaptorVal": 11
+    },
+    {
+      "electrodeNum": 11,
+      "x": 0,
+      "y": 25,
+      "adaptorVal": 57
+    },
+    {
+      "electrodeNum": 53,
+      "x": 8,
+      "y": 50,
+      "adaptorVal": 12
+    },
+    {
+      "electrodeNum": 12,
+      "x": -8,
+      "y": 50,
+      "adaptorVal": 60
+    },
+    {
+      "electrodeNum": 55,
+      "x": 0,
+      "y": 75,
+      "adaptorVal": 17
+    },
+    {
+      "electrodeNum": 52,
+      "x": 10,
+      "y": 100,
+      "adaptorVal": 6
+    },
+    {
+      "electrodeNum": 13,
+      "x": -10,
+      "y": 100,
+      "adaptorVal": 61
+    },
+    {
+      "electrodeNum": 10,
+      "x": 0,
+      "y": 125,
+      "adaptorVal": 58
+    },
+    {
+      "electrodeNum": 51,
+      "x": 10,
+      "y": 150,
+      "adaptorVal": 8
+    },
+    {
+      "electrodeNum": 14,
+      "x": -10,
+      "y": 150,
+      "adaptorVal": 64
+    },
+    {
+      "electrodeNum": 56,
+      "x": 0,
+      "y": 175,
+      "adaptorVal": 15
+    },
+    {
+      "electrodeNum": 50,
+      "x": 10,
+      "y": 200,
+      "adaptorVal": 2
+    },
+    {
+      "electrodeNum": 15,
+      "x": -10,
+      "y": 200,
+      "adaptorVal": 63
+    },
+    {
+      "electrodeNum": 9,
+      "x": 0,
+      "y": 225,
+      "adaptorVal": 54
+    },
+    {
+      "electrodeNum": 49,
+      "x": 10,
+      "y": 250,
+      "adaptorVal": 3
+    },
+    {
+      "electrodeNum": 16,
+      "x": -10,
+      "y": 250,
+      "adaptorVal": 51
+    },
+    {
+      "electrodeNum": 57,
+      "x": 0,
+      "y": 275,
+      "adaptorVal": 21
+    },
+    {
+      "electrodeNum": 48,
+      "x": 10,
+      "y": 300,
+      "adaptorVal": 25
+    },
+    {
+      "electrodeNum": 26,
+      "x": -10,
+      "y": 300,
+      "adaptorVal": 59
+    },
+    {
+      "electrodeNum": 8,
+      "x": 0,
+      "y": 325,
+      "adaptorVal": 55
+    },
+    {
+      "electrodeNum": 39,
+      "x": 10,
+      "y": 350,
+      "adaptorVal": 14
+    },
+    {
+      "electrodeNum": 27,
+      "x": -10,
+      "y": 350,
+      "adaptorVal": 42
+    },
+    {
+      "electrodeNum": 58,
+      "x": 0,
+      "y": 375,
+      "adaptorVal": 20
+    },
+    {
+      "electrodeNum": 38,
+      "x": 10,
+      "y": 400,
+      "adaptorVal": 10
+    },
+    {
+      "electrodeNum": 28,
+      "x": -10,
+      "y": 400,
+      "adaptorVal": 53
+    },
+    {
+      "electrodeNum": 7,
+      "x": 0,
+      "y": 425,
+      "adaptorVal": 52
+    },
+    {
+      "electrodeNum": 37,
+      "x": 10,
+      "y": 450,
+      "adaptorVal": 9
+    },
+    {
+      "electrodeNum": 29,
+      "x": -10,
+      "y": 450,
+      "adaptorVal": 62
+    },
+    {
+      "electrodeNum": 59,
+      "x": 0,
+      "y": 475,
+      "adaptorVal": 29
+    },
+    {
+      "electrodeNum": 36,
+      "x": 10,
+      "y": 500,
+      "adaptorVal": 1
+    },
+    {
+      "electrodeNum": 30,
+      "x": -10,
+      "y": 500,
+      "adaptorVal": 48
+    },
+    {
+      "electrodeNum": 6,
+      "x": 0,
+      "y": 525,
+      "adaptorVal": 50
+    },
+    {
+      "electrodeNum": 35,
+      "x": 10,
+      "y": 550,
+      "adaptorVal": 4
+    },
+    {
+      "electrodeNum": 31,
+      "x": -10,
+      "y": 550,
+      "adaptorVal": 56
+    },
+    {
+      "electrodeNum": 60,
+      "x": 0,
+      "y": 575,
+      "adaptorVal": 24
+    },
+    {
+      "electrodeNum": 34,
+      "x": 10,
+      "y": 600,
+      "adaptorVal": 5
+    },
+    {
+      "electrodeNum": 32,
+      "x": -10,
+      "y": 600,
+      "adaptorVal": 45
+    },
+    {
+      "electrodeNum": 5,
+      "x": 0,
+      "y": 625,
+      "adaptorVal": 46
+    },
+    {
+      "electrodeNum": 33,
+      "x": 10,
+      "y": 650,
+      "adaptorVal": 7
+    },
+    {
+      "electrodeNum": 25,
+      "x": -10,
+      "y": 650,
+      "adaptorVal": 39
+    },
+    {
+      "electrodeNum": 61,
+      "x": 0,
+      "y": 675,
+      "adaptorVal": 34
+    },
+    {
+      "electrodeNum": 40,
+      "x": 10,
+      "y": 700,
+      "adaptorVal": 13
+    },
+    {
+      "electrodeNum": 24,
+      "x": -10,
+      "y": 700,
+      "adaptorVal": 49
+    },
+    {
+      "electrodeNum": 4,
+      "x": 0,
+      "y": 725,
+      "adaptorVal": 43
+    },
+    {
+      "electrodeNum": 41,
+      "x": 10,
+      "y": 750,
+      "adaptorVal": 18
+    },
+    {
+      "electrodeNum": 23,
+      "x": -10,
+      "y": 750,
+      "adaptorVal": 36
+    },
+    {
+      "electrodeNum": 62,
+      "x": 0,
+      "y": 775,
+      "adaptorVal": 28
+    },
+    {
+      "electrodeNum": 42,
+      "x": 10,
+      "y": 800,
+      "adaptorVal": 16
+    },
+    {
+      "electrodeNum": 22,
+      "x": -10,
+      "y": 800,
+      "adaptorVal": 44
+    },
+    {
+      "electrodeNum": 3,
+      "x": 0,
+      "y": 825,
+      "adaptorVal": 41
+    },
+    {
+      "electrodeNum": 43,
+      "x": 10,
+      "y": 850,
+      "adaptorVal": 23
+    },
+    {
+      "electrodeNum": 21,
+      "x": -10,
+      "y": 850,
+      "adaptorVal": 33
+    },
+    {
+      "electrodeNum": 63,
+      "x": 0,
+      "y": 875,
+      "adaptorVal": 38
+    },
+    {
+      "electrodeNum": 44,
+      "x": 10,
+      "y": 900,
+      "adaptorVal": 19
+    },
+    {
+      "electrodeNum": 20,
+      "x": -10,
+      "y": 900,
+      "adaptorVal": 40
+    },
+    {
+      "electrodeNum": 2,
+      "x": 0,
+      "y": 925,
+      "adaptorVal": 47
+    },
+    {
+      "electrodeNum": 45,
+      "x": 10,
+      "y": 950,
+      "adaptorVal": 26
+    },
+    {
+      "electrodeNum": 19,
+      "x": -10,
+      "y": 950,
+      "adaptorVal": 30
+    },
+    {
+      "electrodeNum": 64,
+      "x": 0,
+      "y": 975,
+      "adaptorVal": 32
+    },
+    {
+      "electrodeNum": 46,
+      "x": 10,
+      "y": 1000,
+      "adaptorVal": 22
+    },
+    {
+      "electrodeNum": 18,
+      "x": -10,
+      "y": 1000,
+      "adaptorVal": 35
+    },
+    {
+      "electrodeNum": 1,
+      "x": 0,
+      "y": 1025,
+      "adaptorVal": 37
+    },
+    {
+      "electrodeNum": 47,
+      "x": 10,
+      "y": 1050,
+      "adaptorVal": 31
+    },
+    {
+      "electrodeNum": 17,
+      "x": -10,
+      "y": 1050,
+      "adaptorVal": 27
+    }
+  ]
+}
