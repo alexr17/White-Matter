@@ -1,0 +1,840 @@
+[{
+  "name": "64G",
+  "numE": 64,
+  "width": 380,
+  "height": 525,
+  "probeGeometry": [
+    {
+      "electrodeNum": 48,
+      "x": 300,
+      "y": 0,
+      "adaptorVals": [
+        {
+          "HS640": 25
+        },
+        {
+          "HS64 EIB": 49
+        }
+      ]
+    },
+    {
+      "electrodeNum": 16,
+      "x": 0,
+      "y": 0,
+      "adaptorVals": [
+        {
+          "HS640": 51
+        },
+        {
+          "HS64 EIB": 20
+        }
+      ]
+    },
+    {
+      "electrodeNum": 39,
+      "x": 310,
+      "y": 25,
+      "adaptorVals": [
+        {
+          "HS640": 14
+        },
+        {
+          "HS64 EIB": 41
+        }
+      ]
+    },
+    {
+      "electrodeNum": 62,
+      "x": 290,
+      "y": 25,
+      "adaptorVals": [
+        {
+          "HS640": 28
+        },
+        {
+          "HS64 EIB": 50
+        }
+      ]
+    },
+    {
+      "electrodeNum": 2,
+      "x": 10,
+      "y": 25,
+      "adaptorVals": [
+        {
+          "HS640": 47
+        },
+        {
+          "HS64 EIB": 30
+        }
+      ]
+    },
+    {
+      "electrodeNum": 28,
+      "x": -10,
+      "y": 25,
+      "adaptorVals": [
+        {
+          "HS640": 53
+        },
+        {
+          "HS64 EIB": 21
+        }
+      ]
+    },
+    {
+      "electrodeNum": 49,
+      "x": 300,
+      "y": 50,
+      "adaptorVals": [
+        {
+          "HS640": 3
+        },
+        {
+          "HS64 EIB": 46
+        }
+      ]
+    },
+    {
+      "electrodeNum": 17,
+      "x": 0,
+      "y": 50,
+      "adaptorVals": [
+        {
+          "HS640": 27
+        },
+        {
+          "HS64 EIB": 15
+        }
+      ]
+    },
+    {
+      "electrodeNum": 38,
+      "x": 310,
+      "y": 75,
+      "adaptorVals": [
+        {
+          "HS640": 10
+        },
+        {
+          "HS64 EIB": 59
+        }
+      ]
+    },
+    {
+      "electrodeNum": 63,
+      "x": 290,
+      "y": 75,
+      "adaptorVals": [
+        {
+          "HS640": 38
+        },
+        {
+          "HS64 EIB": 36
+        }
+      ]
+    },
+    {
+      "electrodeNum": 1,
+      "x": 10,
+      "y": 75,
+      "adaptorVals": [
+        {
+          "HS640": 37
+        },
+        {
+          "HS64 EIB": 14
+        }
+      ]
+    },
+    {
+      "electrodeNum": 27,
+      "x": -10,
+      "y": 75,
+      "adaptorVals": [
+        {
+          "HS640": 42
+        },
+        {
+          "HS64 EIB": 5
+        }
+      ]
+    },
+    {
+      "electrodeNum": 47,
+      "x": 300,
+      "y": 100,
+      "adaptorVals": [
+        {
+          "HS640": 31
+        },
+        {
+          "HS64 EIB": 33
+        }
+      ]
+    },
+    {
+      "electrodeNum": 15,
+      "x": 0,
+      "y": 100,
+      "adaptorVals": [
+        {
+          "HS640": 63
+        },
+        {
+          "HS64 EIB": 4
+        }
+      ]
+    },
+    {
+      "electrodeNum": 37,
+      "x": 310,
+      "y": 125,
+      "adaptorVals": [
+        {
+          "HS640": 9
+        },
+        {
+          "HS64 EIB": 43
+        }
+      ]
+    },
+    {
+      "electrodeNum": 64,
+      "x": 290,
+      "y": 125,
+      "adaptorVals": [
+        {
+          "HS640": 32
+        },
+        {
+          "HS64 EIB": 52
+        }
+      ]
+    },
+    {
+      "electrodeNum": 3,
+      "x": 10,
+      "y": 125,
+      "adaptorVals": [
+        {
+          "HS640": 41
+        },
+        {
+          "HS64 EIB": 16
+        }
+      ]
+    },
+    {
+      "electrodeNum": 26,
+      "x": -10,
+      "y": 125,
+      "adaptorVals": [
+        {
+          "HS640": 59
+        },
+        {
+          "HS64 EIB": 23
+        }
+      ]
+    },
+    {
+      "electrodeNum": 50,
+      "x": 300,
+      "y": 150,
+      "adaptorVals": [
+        {
+          "HS640": 2
+        },
+        {
+          "HS64 EIB": 62
+        }
+      ]
+    },
+    {
+      "electrodeNum": 18,
+      "x": 0,
+      "y": 150,
+      "adaptorVals": [
+        {
+          "HS640": 35
+        },
+        {
+          "HS64 EIB": 31
+        }
+      ]
+    },
+    {
+      "electrodeNum": 36,
+      "x": 310,
+      "y": 175,
+      "adaptorVals": [
+        {
+          "HS640": 1
+        },
+        {
+          "HS64 EIB": 47
+        }
+      ]
+    },
+    {
+      "electrodeNum": 61,
+      "x": 290,
+      "y": 175,
+      "adaptorVals": [
+        {
+          "HS640": 34
+        },
+        {
+          "HS64 EIB": 34
+        }
+      ]
+    },
+    {
+      "electrodeNum": 4,
+      "x": 10,
+      "y": 175,
+      "adaptorVals": [
+        {
+          "HS640": 43
+        },
+        {
+          "HS64 EIB": 32
+        }
+      ]
+    },
+    {
+      "electrodeNum": 29,
+      "x": -10,
+      "y": 175,
+      "adaptorVals": [
+        {
+          "HS640": 62
+        },
+        {
+          "HS64 EIB": 17
+        }
+      ]
+    },
+    {
+      "electrodeNum": 46,
+      "x": 300,
+      "y": 200,
+      "adaptorVals": [
+        {
+          "HS640": 22
+        },
+        {
+          "HS64 EIB": 51
+        }
+      ]
+    },
+    {
+      "electrodeNum": 14,
+      "x": 0,
+      "y": 200,
+      "adaptorVals": [
+        {
+          "HS640": 64
+        },
+        {
+          "HS64 EIB": 18
+        }
+      ]
+    },
+    {
+      "electrodeNum": 35,
+      "x": 310,
+      "y": 225,
+      "adaptorVals": [
+        {
+          "HS640": 4
+        },
+        {
+          "HS64 EIB": 63
+        }
+      ]
+    },
+    {
+      "electrodeNum": 60,
+      "x": 290,
+      "y": 225,
+      "adaptorVals": [
+        {
+          "HS640": 24
+        },
+        {
+          "HS64 EIB": 56
+        }
+      ]
+    },
+    {
+      "electrodeNum": 5,
+      "x": 10,
+      "y": 225,
+      "adaptorVals": [
+        {
+          "HS640": 46
+        },
+        {
+          "HS64 EIB": 10
+        }
+      ]
+    },
+    {
+      "electrodeNum": 30,
+      "x": -10,
+      "y": 225,
+      "adaptorVals": [
+        {
+          "HS640": 48
+        },
+        {
+          "HS64 EIB": 1
+        }
+      ]
+    },
+    {
+      "electrodeNum": 51,
+      "x": 300,
+      "y": 250,
+      "adaptorVals": [
+        {
+          "HS640": 8
+        },
+        {
+          "HS64 EIB": 48
+        }
+      ]
+    },
+    {
+      "electrodeNum": 19,
+      "x": 0,
+      "y": 250,
+      "adaptorVals": [
+        {
+          "HS640": 30
+        },
+        {
+          "HS64 EIB": 13
+        }
+      ]
+    },
+    {
+      "electrodeNum": 34,
+      "x": 310,
+      "y": 275,
+      "adaptorVals": [
+        {
+          "HS640": 5
+        },
+        {
+          "HS64 EIB": 45
+        }
+      ]
+    },
+    {
+      "electrodeNum": 59,
+      "x": 290,
+      "y": 275,
+      "adaptorVals": [
+        {
+          "HS640": 29
+        },
+        {
+          "HS64 EIB": 40
+        }
+      ]
+    },
+    {
+      "electrodeNum": 6,
+      "x": 10,
+      "y": 275,
+      "adaptorVals": [
+        {
+          "HS640": 50
+        },
+        {
+          "HS64 EIB": 26
+        }
+      ]
+    },
+    {
+      "electrodeNum": 31,
+      "x": -10,
+      "y": 275,
+      "adaptorVals": [
+        {
+          "HS640": 56
+        },
+        {
+          "HS64 EIB": 19
+        }
+      ]
+    },
+    {
+      "electrodeNum": 45,
+      "x": 300,
+      "y": 300,
+      "adaptorVals": [
+        {
+          "HS640": 26
+        },
+        {
+          "HS64 EIB": 35
+        }
+      ]
+    },
+    {
+      "electrodeNum": 13,
+      "x": 0,
+      "y": 300,
+      "adaptorVals": [
+        {
+          "HS640": 61
+        },
+        {
+          "HS64 EIB": 2
+        }
+      ]
+    },
+    {
+      "electrodeNum": 33,
+      "x": 310,
+      "y": 325,
+      "adaptorVals": [
+        {
+          "HS640": 7
+        },
+        {
+          "HS64 EIB": 61
+        }
+      ]
+    },
+    {
+      "electrodeNum": 58,
+      "x": 290,
+      "y": 325,
+      "adaptorVals": [
+        {
+          "HS640": 20
+        },
+        {
+          "HS64 EIB": 54
+        }
+      ]
+    },
+    {
+      "electrodeNum": 7,
+      "x": 10,
+      "y": 325,
+      "adaptorVals": [
+        {
+          "HS640": 52
+        },
+        {
+          "HS64 EIB": 12
+        }
+      ]
+    },
+    {
+      "electrodeNum": 32,
+      "x": -10,
+      "y": 325,
+      "adaptorVals": [
+        {
+          "HS640": 45
+        },
+        {
+          "HS64 EIB": 3
+        }
+      ]
+    },
+    {
+      "electrodeNum": 52,
+      "x": 300,
+      "y": 350,
+      "adaptorVals": [
+        {
+          "HS640": 6
+        },
+        {
+          "HS64 EIB": 64
+        }
+      ]
+    },
+    {
+      "electrodeNum": 20,
+      "x": 0,
+      "y": 350,
+      "adaptorVals": [
+        {
+          "HS640": 40
+        },
+        {
+          "HS64 EIB": 29
+        }
+      ]
+    },
+    {
+      "electrodeNum": 40,
+      "x": 310,
+      "y": 375,
+      "adaptorVals": [
+        {
+          "HS640": 13
+        },
+        {
+          "HS64 EIB": 57
+        }
+      ]
+    },
+    {
+      "electrodeNum": 57,
+      "x": 290,
+      "y": 375,
+      "adaptorVals": [
+        {
+          "HS640": 21
+        },
+        {
+          "HS64 EIB": 38
+        }
+      ]
+    },
+    {
+      "electrodeNum": 8,
+      "x": 10,
+      "y": 375,
+      "adaptorVals": [
+        {
+          "HS640": 55
+        },
+        {
+          "HS64 EIB": 28
+        }
+      ]
+    },
+    {
+      "electrodeNum": 25,
+      "x": -10,
+      "y": 375,
+      "adaptorVals": [
+        {
+          "HS640": 39
+        },
+        {
+          "HS64 EIB": 7
+        }
+      ]
+    },
+    {
+      "electrodeNum": 44,
+      "x": 300,
+      "y": 400,
+      "adaptorVals": [
+        {
+          "HS640": 19
+        },
+        {
+          "HS64 EIB": 53
+        }
+      ]
+    },
+    {
+      "electrodeNum": 12,
+      "x": 0,
+      "y": 400,
+      "adaptorVals": [
+        {
+          "HS640": 60
+        },
+        {
+          "HS64 EIB": 24
+        }
+      ]
+    },
+    {
+      "electrodeNum": 41,
+      "x": 310,
+      "y": 425,
+      "adaptorVals": [
+        {
+          "HS640": 18
+        },
+        {
+          "HS64 EIB": 39
+        }
+      ]
+    },
+    {
+      "electrodeNum": 56,
+      "x": 290,
+      "y": 425,
+      "adaptorVals": [
+        {
+          "HS640": 15
+        },
+        {
+          "HS64 EIB": 60
+        }
+      ]
+    },
+    {
+      "electrodeNum": 9,
+      "x": 10,
+      "y": 425,
+      "adaptorVals": [
+        {
+          "HS640": 54
+        },
+        {
+          "HS64 EIB": 6
+        }
+      ]
+    },
+    {
+      "electrodeNum": 24,
+      "x": -10,
+      "y": 425,
+      "adaptorVals": [
+        {
+          "HS640": 49
+        },
+        {
+          "HS64 EIB": 25
+        }
+      ]
+    },
+    {
+      "electrodeNum": 53,
+      "x": 300,
+      "y": 450,
+      "adaptorVals": [
+        {
+          "HS640": 12
+        },
+        {
+          "HS64 EIB": 42
+        }
+      ]
+    },
+    {
+      "electrodeNum": 21,
+      "x": 0,
+      "y": 450,
+      "adaptorVals": [
+        {
+          "HS640": 33
+        },
+        {
+          "HS64 EIB": 11
+        }
+      ]
+    },
+    {
+      "electrodeNum": 42,
+      "x": 310,
+      "y": 475,
+      "adaptorVals": [
+        {
+          "HS640": 16
+        },
+        {
+          "HS64 EIB": 55
+        }
+      ]
+    },
+    {
+      "electrodeNum": 55,
+      "x": 290,
+      "y": 475,
+      "adaptorVals": [
+        {
+          "HS640": 17
+        },
+        {
+          "HS64 EIB": 44
+        }
+      ]
+    },
+    {
+      "electrodeNum": 10,
+      "x": 10,
+      "y": 475,
+      "adaptorVals": [
+        {
+          "HS640": 58
+        },
+        {
+          "HS64 EIB": 22
+        }
+      ]
+    },
+    {
+      "electrodeNum": 23,
+      "x": -10,
+      "y": 475,
+      "adaptorVals": [
+        {
+          "HS640": 36
+        },
+        {
+          "HS64 EIB": 9
+        }
+      ]
+    },
+    {
+      "electrodeNum": 43,
+      "x": 300,
+      "y": 500,
+      "adaptorVals": [
+        {
+          "HS640": 23
+        },
+        {
+          "HS64 EIB": 37
+        }
+      ]
+    },
+    {
+      "electrodeNum": 11,
+      "x": 0,
+      "y": 500,
+      "adaptorVals": [
+        {
+          "HS640": 57
+        },
+        {
+          "HS64 EIB": 8
+        }
+      ]
+    },
+    {
+      "electrodeNum": 54,
+      "x": 300,
+      "y": 525,
+      "adaptorVals": [
+        {
+          "HS640": 11
+        },
+        {
+          "HS64 EIB": 58
+        }
+      ]
+    },
+    {
+      "electrodeNum": 22,
+      "x": 0,
+      "y": 525,
+      "adaptorVals": [
+        {
+          "HS640": 44
+        },
+        {
+          "HS64 EIB": 27
+        }
+      ]
+    }
+  ]
+}]

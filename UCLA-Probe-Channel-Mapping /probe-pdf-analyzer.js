@@ -41,7 +41,7 @@ for (var jj = 0; jj < pdfData.length; jj++) {
   }
 
 
-  var linearProbe = []
+  var linearProbe = [];
   var shanks = []
   var nums = []
   for (var hh = 0; hh < electrodes.length; hh++) {
@@ -49,22 +49,28 @@ for (var jj = 0; jj < pdfData.length; jj++) {
     nums.push(electrodes[hh].split(' ').map(Number))
     
   }
-  if (numShanks > 1) {  
+
+  if (numShanks > 1) {
+    //console.log('shanks')
     for (var ll = 0; ll < numShanks; ll++) { //0 ... 1 ... 2
       for (var ii = 0; ii < nums.length; ii++) {
+        //console.log('new num')
+        //console.log(linearProbe)
         var spac = nums[ii].length/numShanks //nums-->12 numShanks --> 3 spac --> 4
+        linearProbe[ii] = []
         for (var mm = 0; mm < spac; mm++) { //0,1,2,3 ... 4,5,6,7 ... 8,9,10,11
-          //linearProbe.push(m+ll*spac)
-          linearProbe.push(nums[ii][mm+ll*spac])
+          
+          linearProbe[ii].push(nums[ii][mm+ll*spac])
         }
       }
+      console.log('shank ' + ll + ':')
+      console.log(linearProbe)
     }  
   } else {
     for (num of nums) {
       linearProbe.push(num)
     }
   }
-  console.log(linearProbe)
   //console.log(shanks)
 }
 

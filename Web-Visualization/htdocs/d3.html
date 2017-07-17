@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<style>
+body {
+  font: 11px sans-serif;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: sans-serif;
+    font-size: 11px;
+}
+
+
+.dot {
+  stroke: #000;
+}
+
+.tooltip {
+  position: absolute;
+  width: 300px;
+  height: 30px;
+  pointer-events: none;
+}
+</style>
+
+<head>d3 test</head>
+<body>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <select id="inds">
+      <option value="apples" selected="selected">64D</option>
+      
+  </select>
+  <div id="legendContainer" class="legendContainer">
+    <svg id="legend"></svg>
+  </div>
+
+  <!-- buttons for alter
+  <div id="showAll">
+    <input name="showAllButton"
+     type="button"
+     value="Show All"
+     onclick="showAll()" />
+  </div>
+  <div id="clearAll">
+    <input name="clearAllButton"
+     type="button"
+     value="Clear All"
+     onclick="clearAll()" />
+  </div>
+  -->
+  <script>
+
+  function filterJSON(json, key, value) {
+    var result = [];
+
+    for (var obj of json) {
+      if (obj[key] == value) {
+        result = obj['probeGeometry']
+      }
+    }
+    return result;
+  }
+
+  var data;
+  // Get the data
+  d3.json("data.json", function(error, json) {
+    console.log(json)
+    json.forEach(function(d) {
+      //d.value = d.value;
+    });
+
+    // when it changes
+    d3.select('#inds')
+        .on("change", function () {
+          var sect = document.getElementById("inds");
+          var section = sect.options[sect.selectedIndex].value; //what name
+          console.log(section)
+          data = filterJSON(json, 'produce', section);
+
+          
+          //debugger
+          
+          data.forEach(function(d) {
+            //d.year = parseDate(String(d.year));
+            d.active = true;
+          });
+          
+          console.log(data)
+          //debugger
+          updateGraph(data);
+
+
+          jQuery('h1.page-header').html(section);
+        });
+
+    // generate initial graph
+    data = filterJSON(json, 'name', '64G');
+    updateGraph(data);
+
+  });
+
+
+
+  // Set the dimensions of the canvas / graph
+  var margin = {top: 20, right: 20, bottom: 30, left: 160},
+    width = 700 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+  // Parse the date / time
+
+  // setup x 
+var xValue = function(d) { return d.x;}, // data -> value
+    xScale = d3.scale.linear().range([0, width]), // value -> display
+    xMap = function(d) { return xScale(xValue(d));}; // data -> display
+    xAxis = d3.svg.axis().scale(xScale).orient("bottom");
+
+// setup y
+var yValue = function(d) { return d.y;}, // data -> value
+    yScale = d3.scale.linear().range([height, 0]), // value -> display
+    yMap = function(d) { return yScale(yValue(d));}, // data -> display
+    yAxis = d3.svg.axis()
+                  .scale(yScale)
+                  .ticks(5)
+                  .orient("left");
+
+
+
+/*
+
+  // Define the line -- maybe a function?
+  
+  var stateline = d3.svg.line()
+      .interpolate("linear")
+      .x(function(d) { return xScale(d.year); })
+      .y(function(d) { return yScale(d.value); });
+*/
+  // Adds the svg canvas
+  var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  // add the tooltip area to the webpage
+  var tooltip = d3.select("body").append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0);
+
+  var data;
+  // Get the data
+  d3.json("data.json", function(error, json) {
+    //console.log(json)
+   
+    json.forEach(function(d) {
+      //d.value = d.value;
+    });
+
+    d3.select('#inds')
+        .on("change", function () {
+          var sect = document.getElementById("inds");
+          var section = sect.options[sect.selectedIndex].value; //what name
+          console.log(section)
+          data = filterJSON(json, 'produce', section);
+
+          
+          //debugger
+          
+          data.forEach(function(d) {
+            //d.year = parseDate(String(d.year));
+            d.active = true;
+          });
+          
+          console.log(data)
+          //debugger
+          updateGraph(data);
+
+
+          jQuery('h1.page-header').html(section);
+        });
+
+    // generate initial graph
+    data = filterJSON(json, 'name', '64D');
+    updateGraph(data);
+
+  });
+
+
+  function updateGraph(data) {
+    //console.log(data)
+
+    // Scale the range of the data
+    xScale.domain([d3.min(data, xValue)-1, d3.max(data, xValue)+1]);
+    yScale.domain([d3.min(data, yValue)-1, d3.max(data, yValue)+1]);
+    //at this point data is an array of objects corresponding to the selected value
+
+    svg.selectAll(".axis").remove();
+
+    // Add the X Axis
+    svg.append("g")
+        .attr("class", "x axis")
+        .call(xAxis);
+    
+    // Add the Y Axis
+    svg.append("g")
+        .attr("class", "y axis")
+        .call(yAxis);
+      //.style("fill", function(d) { return color(cValue(d));})
+
+    
+
+    // Nest the entries by state
+    //dataNest = d3.nest().key(function(d) {return d.state;}).entries(data);
+    //console.log(dataNest)
+
+    //dataNest is an array of objects -- one for each state
+    
+    //filter out based on which things have been selected
+    /*
+    var result = dataNest.filter(function(val,idx, arr){
+      return $("." + val.key).attr("fill") != "#ccc" 
+      // matching the data with selector status
+    })
+    */
+    //console.log(result)
+        
+    /*
+    var state = svg.selectAll().data(dataNest, function(d){return d.key});
+
+    console.log(state)
+      state.enter().append("circle")
+      .attr("class", "dot");
+
+    
+    
+    state.transition()
+      .style("stroke", function(d,i) { return d.color = color(d.key); })
+      .attr("class", "dot")
+      .attr("r", 3.5)
+      .attr("cx", xMap)
+      .attr("cy", yMap)
+      .attr("id", function(d){ return 'tag'+d.key.replace(/\s+/g, '');}) // assign ID
+      .attr("d", function(d){
+        return stateline(d.values)
+      });
+    console.log(state.attr('cx'))
+    state.exit().remove();
+    */
+    svg.selectAll('.dot')
+      .data(data)
+    .enter().append("circle")
+      .attr("class", "dot")
+      .attr("r", 4)
+      .attr("cx", xMap)
+      .attr("cy", yMap)
+      .style("fill", '#ffcccb') 
+        .on("mouseover", function(d) {
+            tooltip.transition()
+                 .duration(200)
+                 .style("opacity", .9);
+            tooltip.html('64F electrode: ' + d.electrodeNum + ' HS640 adaptor: ' + d.adaptorVals['HS640'])
+                 .style("left", (150 + "px"))
+                 .style("top", 150 + "px")
+                 .style("font-size", "30px")
+                 .style("display", "inline-block")
+            d3.select(this).attr("r", 5).style("fill", "#aaeeee")
+
+        })
+        .on("mouseout", function(d) {
+            tooltip.transition()
+                 .duration(500)
+                 .style("opacity", 0);
+            d3.select(this).attr("r", 4).style("fill", "#ffcccb")
+      });
+
+      /*
+    var legend = d3.select("#legend")
+      .selectAll("text")
+      .data(dataNest, function(d){return d.key});
+      
+    //checkboxes
+    legend.enter().append("rect")
+      .attr("width", 10)
+      .attr("height", 10)
+      .attr("x", 0)
+      .attr("y", function (d, i) { return 0 +i*15; })  // spacing
+      .attr("fill",function(d) { 
+        return color(d.key);
+        
+      })
+      .attr("class", function(d,i){return "legendcheckbox " + d.key})
+      .on("click", function(d){
+        d.active = !d.active;
+        
+        d3.select(this).attr("fill", function(d){
+          if(d3.select(this).attr("fill")  == "#ccc"){
+            return color(d.key);
+          }else {
+            return "#ccc";
+          }
+        })
+        
+        
+       var result = dataNest.filter(function(val,idx, arr){
+         return $("." + val.key).attr("fill") != "#ccc" 
+       // matching the data with selector status
+      })
+      
+       // Hide or show the lines based on the ID
+       svg.selectAll(".line").data(result, function(d){return d.key})
+         .enter()
+         .append("path")
+         .attr("class", "line")
+         .style("stroke", function(d,i) { return d.color = color(d.key); })
+        .attr("d", function(d){
+                return stateline(d.values);
+         });
+ 
+      svg.selectAll(".line").data(result, function(d){return d.key}).exit().remove()  
+      
+      })
+      */
+    /*      
+    // Add the Legend text
+    legend.enter().append("text")
+      .attr("x", 15)
+      .attr("y", function(d,i){return 10 +i*15;})
+      .attr("class", "legend");
+
+    legend.transition()
+      .style("fill", "#777" )
+      .text(function(d){return d.key;});
+
+    legend.exit().remove();
+    */
+    
+  };
+  
+  /*
+  function clearAll(){
+    d3.selectAll(".line")
+    .transition().duration(100)
+        .attr("d", function(d){
+          return null;
+        });
+    d3.select("#legend").selectAll("rect")
+    .transition().duration(100)
+        .attr("fill", "#ccc");
+  };
+  */
+  
+  /*
+  function showAll(){
+    d3.selectAll(".line")
+    .transition().duration(100)
+        .attr("d", function(d){
+          return stateline(d.values);
+        });
+    d3.select("#legend").selectAll("rect")
+    .attr("fill",function(d) {
+      if (d.active == true){
+         return color(d.key);
+       }
+     })
+  };
+  */
+  
+  </script>
+</body>
